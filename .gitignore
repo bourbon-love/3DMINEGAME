@@ -1,0 +1,18 @@
+# Visual Studio build output
+x64/
+.vs/
+*.user
+*.suo
+*.ncb
+*.sdf
+ipch/
+
+# vcxproj build cache
+20240425.4e3c0557/
+
+# Claude Code local settings
+.claude/
+
+# Empty placeholder directories
+lib/
+Scene/
