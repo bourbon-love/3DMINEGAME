@@ -73,6 +73,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(ProjectDir);src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
@@ -86,6 +87,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(ProjectDir);src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
@@ -103,6 +105,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(ProjectDir);src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
@@ -116,6 +119,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>$(ProjectDir);src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
@@ -131,75 +135,75 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Ball.cpp" />
-    <ClCompile Include="BattleHall.cpp" />
-    <ClCompile Include="Bg.cpp" />
-    <ClCompile Include="Box.cpp" />
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="CharactorScene.cpp" />
-    <ClCompile Include="Collision.cpp" />
-    <ClCompile Include="DDSTextureLoader.cpp" />
-    <ClCompile Include="FrameWork\TextureManager.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="GeometricTextRenderer.cpp" />
-    <ClCompile Include="keyboard.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Manager.cpp" />
-    <ClCompile Include="MapEditor.cpp" />
-    <ClCompile Include="MiniMap.cpp" />
-    <ClCompile Include="model.cpp" />
-    <ClCompile Include="mouse.cpp" />
-    <ClCompile Include="MovementRangeSystem.cpp" />
-    <ClCompile Include="MultiBattle\MultiplayerMap.cpp" />
-    <ClCompile Include="MultiplayerBattle.cpp" />
-    <ClCompile Include="ParticlaEffect.cpp" />
-    <ClCompile Include="PixelCharacters.cpp" />
-    <ClCompile Include="ProceduralModels.cpp" />
-    <ClCompile Include="renderer.cpp" />
-    <ClCompile Include="SceneManager.cpp" />
-    <ClCompile Include="SceneRenderer.cpp" />
-    <ClCompile Include="SkyDome.cpp" />
-    <ClCompile Include="sprite.cpp" />
-    <ClCompile Include="texture.cpp" />
-    <ClCompile Include="TextureAtlas.h.cpp" />
-    <ClCompile Include="UIManager.cpp" />
+    <ClCompile Include="src\Ball.cpp" />
+    <ClCompile Include="src\BattleHall.cpp" />
+    <ClCompile Include="src\Bg.cpp" />
+    <ClCompile Include="src\Box.cpp" />
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\CharactorScene.cpp" />
+    <ClCompile Include="src\Collision.cpp" />
+    <ClCompile Include="src\DDSTextureLoader.cpp" />
+    <ClCompile Include="src\FrameWork\TextureManager.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\GeometricTextRenderer.cpp" />
+    <ClCompile Include="src\keyboard.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Manager.cpp" />
+    <ClCompile Include="src\MapEditor.cpp" />
+    <ClCompile Include="src\MiniMap.cpp" />
+    <ClCompile Include="src\model.cpp" />
+    <ClCompile Include="src\mouse.cpp" />
+    <ClCompile Include="src\MovementRangeSystem.cpp" />
+    <ClCompile Include="src\MultiBattle\MultiplayerMap.cpp" />
+    <ClCompile Include="src\MultiplayerBattle.cpp" />
+    <ClCompile Include="src\ParticlaEffect.cpp" />
+    <ClCompile Include="src\PixelCharacters.cpp" />
+    <ClCompile Include="src\ProceduralModels.cpp" />
+    <ClCompile Include="src\renderer.cpp" />
+    <ClCompile Include="src\SceneManager.cpp" />
+    <ClCompile Include="src\SceneRenderer.cpp" />
+    <ClCompile Include="src\SkyDome.cpp" />
+    <ClCompile Include="src\sprite.cpp" />
+    <ClCompile Include="src\texture.cpp" />
+    <ClCompile Include="src\TextureAtlas.h.cpp" />
+    <ClCompile Include="src\UIManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Ball.h" />
-    <ClInclude Include="BattleHall.h" />
-    <ClInclude Include="Bg.h" />
-    <ClInclude Include="Box.h" />
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="CameraDebugTool.h" />
-    <ClInclude Include="CharactorScene.h" />
-    <ClInclude Include="Collision.h" />
-    <ClInclude Include="DDSTextureLoader.h" />
-    <ClInclude Include="debugPrintf.h" />
-    <ClInclude Include="DirectXTex.h" />
-    <ClInclude Include="FrameWork\TextureManager.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="GeometricTextRenderer.h" />
-    <ClInclude Include="keyboard.h" />
-    <ClInclude Include="main.h" />
-    <ClInclude Include="Manager.h" />
-    <ClInclude Include="MapEditor.h" />
-    <ClInclude Include="MiniMap.h" />
-    <ClInclude Include="model.h" />
-    <ClInclude Include="mouse.h" />
-    <ClInclude Include="MovementRangeSystem.h" />
-    <ClInclude Include="MultiBattle\MultiplayerMap.h" />
-    <ClInclude Include="MultiplayerBattle.h" />
-    <ClInclude Include="ParticlaEffect.h" />
-    <ClInclude Include="PixelCharacters.h" />
-    <ClInclude Include="ProceduralModels.h" />
-    <ClInclude Include="renderer.h" />
-    <ClInclude Include="SceneManager.h" />
-    <ClInclude Include="SceneRenderer.h" />
-    <ClInclude Include="SkyDome.h" />
-    <ClInclude Include="sprite.h" />
-    <ClInclude Include="texture.h" />
-    <ClInclude Include="TextureAtlas.h" />
-    <ClInclude Include="UIManager.h" />
+    <ClInclude Include="src\Ball.h" />
+    <ClInclude Include="src\BattleHall.h" />
+    <ClInclude Include="src\Bg.h" />
+    <ClInclude Include="src\Box.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\CameraDebugTool.h" />
+    <ClInclude Include="src\CharactorScene.h" />
+    <ClInclude Include="src\Collision.h" />
+    <ClInclude Include="src\DDSTextureLoader.h" />
+    <ClInclude Include="src\debugPrintf.h" />
+    <ClInclude Include="src\DirectXTex.h" />
+    <ClInclude Include="src\FrameWork\TextureManager.h" />
+    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\GeometricTextRenderer.h" />
+    <ClInclude Include="src\keyboard.h" />
+    <ClInclude Include="src\main.h" />
+    <ClInclude Include="src\Manager.h" />
+    <ClInclude Include="src\MapEditor.h" />
+    <ClInclude Include="src\MiniMap.h" />
+    <ClInclude Include="src\model.h" />
+    <ClInclude Include="src\mouse.h" />
+    <ClInclude Include="src\MovementRangeSystem.h" />
+    <ClInclude Include="src\MultiBattle\MultiplayerMap.h" />
+    <ClInclude Include="src\MultiplayerBattle.h" />
+    <ClInclude Include="src\ParticlaEffect.h" />
+    <ClInclude Include="src\PixelCharacters.h" />
+    <ClInclude Include="src\ProceduralModels.h" />
+    <ClInclude Include="src\renderer.h" />
+    <ClInclude Include="src\SceneManager.h" />
+    <ClInclude Include="src\SceneRenderer.h" />
+    <ClInclude Include="src\SkyDome.h" />
+    <ClInclude Include="src\sprite.h" />
+    <ClInclude Include="src\texture.h" />
+    <ClInclude Include="src\TextureAtlas.h" />
+    <ClInclude Include="src\UIManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="assimp-vc143-mt.dll" />
