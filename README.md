@@ -2,6 +2,8 @@
 
 A personal project — a 3D tactical game built from scratch in C++ and DirectX 11.
 
+> **Demo video:** <https://youtu.be/4HiV34tTbH0>  
+>
 > **This is an early demo.** Core systems are in place but content, balance, and polish are still in progress.
 
 ---
